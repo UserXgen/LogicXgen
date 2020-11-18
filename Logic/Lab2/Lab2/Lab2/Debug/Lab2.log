@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(35): warning C4101: items: неиспользованная локальная переменная
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(157): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(170): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(299): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(313): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\lab2\lab2\source.cpp(330): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Lab2.vcxproj -> C:\Users\User\Desktop\Logic\Lab2\Debug\Lab2.exe
+  Lab2.vcxproj -> C:\Users\User\Desktop\Logic\Lab2\Debug\Lab2.pdb (Partial PDB)

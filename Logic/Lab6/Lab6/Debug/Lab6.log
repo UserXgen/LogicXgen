@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\user\desktop\logic\pavlovv2\lab6\lab6\main.cpp(118): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\pavlovv2\lab6\lab6\main.cpp(164): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\desktop\logic\pavlovv2\lab6\lab6\main.cpp(167): warning C4018: <: несоответствие типов со знаком и без знака
+  Lab6.vcxproj -> C:\Users\User\Desktop\Logic\PavloVV2\Lab6\Debug\Lab6.exe
+  Lab6.vcxproj -> C:\Users\User\Desktop\Logic\PavloVV2\Lab6\Debug\Lab6.pdb (Partial PDB)
