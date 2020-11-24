@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\user\desktop\logic\lab7\lab7\lab7\main.cpp(93): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\desktop\logic\lab7\lab7\lab7\main.cpp(167): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Lab7.vcxproj -> C:\Users\User\Desktop\Logic\Lab7\Lab7\Debug\Lab7.exe
+  Lab7.vcxproj -> C:\Users\User\Desktop\Logic\Lab7\Lab7\Debug\Lab7.pdb (Partial PDB)
