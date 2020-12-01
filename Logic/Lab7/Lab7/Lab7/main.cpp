@@ -54,6 +54,9 @@ void main(int argc, char *argv[]) // argument count(подсчёт), argument values(зн
 
 		if (strcmp(argv[i], "weight") == 0) // weigh unweigh
 			ves = 1;
+
+		if (strcmp(argv[i], "razm") == 0) // weigh unweigh
+			argv[i + 1] = st;
 	}
 
 	if (ves == 1)
