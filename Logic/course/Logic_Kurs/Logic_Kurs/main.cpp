@@ -33,8 +33,8 @@ using namespace std;
 struct Edges {
 	int u, v, w;
 };
-const int Vmax = 1000;
-const int Emax = Vmax * (Vmax - 1) / 2;
+
+const int Emax = 1000;
 int i, j, n, e, start;
 
 Edges edge[Emax]; // набор рёбер

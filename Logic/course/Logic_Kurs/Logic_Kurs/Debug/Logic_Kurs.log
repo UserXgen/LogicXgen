@@ -1,2 +1,6 @@
-﻿  Logic_Kurs.vcxproj -> C:\Users\User\Desktop\Logic\LogicXgen\Logic\course\Logic_Kurs\Debug\Logic_Kurs.exe
+﻿  main.cpp
+c:\users\user\desktop\logic\logicxgen\logic\course\logic_kurs\logic_kurs\main.cpp(184): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\user\desktop\logic\logicxgen\logic\course\logic_kurs\logic_kurs\main.cpp(214): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Logic_Kurs.vcxproj -> C:\Users\User\Desktop\Logic\LogicXgen\Logic\course\Logic_Kurs\Debug\Logic_Kurs.exe
   Logic_Kurs.vcxproj -> C:\Users\User\Desktop\Logic\LogicXgen\Logic\course\Logic_Kurs\Debug\Logic_Kurs.pdb (Partial PDB)
