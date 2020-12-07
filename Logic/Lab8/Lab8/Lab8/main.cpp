@@ -656,7 +656,7 @@ void zad1_4(int st)
 
 	int sch2 = 0;
 	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности неориентированного графа для каждой из вершин");
-	for (int j = 0; j < sch4; j++)
+	for (int j = 0; j < N; j++)
 	{
 		sch2 = 0;
 		printf("\n ");
@@ -710,7 +710,7 @@ void zad1_4(int st)
 		if (ex1[i] == 10000)
 			ex1[i] = 0;
 	printf("\nЭксцентриситеты: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		printf("%d ", ex1[i]);
 		if (ex1[i] > dia)
@@ -723,11 +723,11 @@ void zad1_4(int st)
 	int sch1 = 0;
 	printf("\nРадиус - %d, диаметр - %d\n", rad, dia);
 	printf("Центральные вершины: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		if (ex1[i] == rad)
 		{
-			printf("%d ", i);
+			printf("%d ", i++);
 			sch1++;
 		}
 	}
@@ -735,10 +735,10 @@ void zad1_4(int st)
 		printf(" отсутствуют");
 	sch1 = 0;
 	printf("\nПерифирийные вершины: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		if (ex1[i] == dia)
-			printf("%d ", i);
+			printf("%d ", i++);
 	}
 }
 
@@ -773,7 +773,7 @@ void zad1_5(int st)
 			if (M2[i][j] != 0)
 			{
 				inc[i][reb] = 1;				//начало
-												//конец
+				inc[j][reb] = 2;				//конец
 				reb++;
 			}
 	}
@@ -822,7 +822,7 @@ void zad1_5(int st)
 
 	int sch2 = 0;
 	printf("\n\n Поиск расстояний на основе обхода в ширину матрицы смежности ориентированного графа для каждой из вершин");
-	for (int j = 0; j < sch4; j++)
+	for (int j = 0; j < N; j++)
 	{
 		sch2 = 0;
 		printf("\n ");
@@ -875,7 +875,7 @@ void zad1_5(int st)
 		if (ex1[i] == 10000)
 			ex1[i] = 0;
 	printf("\nЭксцентриситеты: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		printf("%d ", ex1[i]);
 		if (ex1[i] > dia)
@@ -888,7 +888,7 @@ void zad1_5(int st)
 	int sch1 = 0;
 	printf("\nРадиус - %d, диаметр - %d\n", rad, dia);
 	printf("Центральные вершины: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		if (ex1[i] == rad)
 		{
@@ -900,7 +900,7 @@ void zad1_5(int st)
 		printf(" отсутствуют");
 	sch1 = 0;
 	printf("\nПерифирийные вершины: \n");
-	for (int i = 0; i < sch4; i++)
+	for (int i = 0; i < N; i++)
 	{
 		if (ex1[i] == dia)
 			printf("%d ", i++);
