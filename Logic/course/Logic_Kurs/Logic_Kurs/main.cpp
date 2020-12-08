@@ -28,7 +28,7 @@ vector <int> nodes; // вектор расстояний
 int st = 0; // стартовая вершина
 
 
-#define inf 100000
+#define inf 2000000000
 using namespace std;
 struct Edges {
 	int u, v, w;
@@ -65,6 +65,7 @@ input:
 	cout << "\n 1 - вручную";
 	cout << "\n 2 - прочитать из файла input.txt";
 	cout << "\n 3 - случайная генерация";
+input2:
 	c = _getch();
 
 	if (c == 49)
@@ -105,9 +106,12 @@ input:
 		{
 			cout << "\n\n Ошибка открытия файла";
 			cout << "\n Проверьте существование файла input.txt";
-			cout << "\n Для корректной работы программы файл должен быть заполнен по примеру матрицы смежности";
+			cout << "\n Для корректной работы программы файл должен быть заполнен в таком виде:";
+			cout << "\n Первая строка - кол-во вершин";
+			cout << "\n Начиная со второй - матрица смежности";
 
 			cout << "\n\n Пример заполнения:";
+			cout << "\n 3 ";
 			cout << "\n 0 8 0 ";
 			cout << "\n 3 0 0 ";
 			cout << "\n 4 0 0\n ";
@@ -125,35 +129,8 @@ input:
 		cout << "\n\n Файл открыт";
 
 		
-		int count = 0; // кол-во чисел в файле
-		int temp; 
-
-		while (!fin.eof()) 
-		{
-			fin >> temp; 
-			count++; 
-		}
 		
-		fin.seekg(0, ios::beg); //перевод каретки в потоке в начало файла
-		fin.clear();
-		
-		
-		int count_space = 0; 
-		char symbol;
-		while (!fin.eof()) // количество пробелов 
-		{
-			
-			fin.get(symbol); 
-			if (symbol == ' ') 
-				count_space++; 
-			if (symbol == '\n') 
-				break; 
-		}
-		fin.seekg(0, ios::beg); 
-		fin.clear();
-
-		
-		N = 20; // число строк
+		fin >> N; // число строк
 		
 		cout << "\n\n Количество вершин > " << N << endl; 
 		nodes.resize(N);
@@ -186,7 +163,7 @@ input:
 		cout << "\n";
 	}
 		
-	else
+	else if (c == 51)
 	{
 		cout << "\n";
 		generation();
@@ -204,6 +181,10 @@ input:
 				}
 			}
 	}
+
+	else
+		goto input2;
+	
 
 	///// вывод матрицы смежности
 	printf("    ");
